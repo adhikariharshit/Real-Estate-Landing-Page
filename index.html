@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real State Bussiness</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="icon" type="image/x-icon" href="../Images/home.png">
+</head>
+<body>
+     <!-- container  -->
+     <div class="container">
+        <div class="head-container">
+
+            <!-- Header  -->
+            <header class="head-section">
+                <div class="head-email">
+                    <div class="head-email-icon">
+                        <img src="../Images/email.png" alt="email-icon" class="icon-1">
+                    </div>
+                    <div class="head-email-text">
+                        <p>Email us at : <a href="#">example@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="head-social-icon">
+                    <div class="social-icon">
+                        <div class="icon"><a href=""><img src="../Images/facebook.png" alt="" class="icon-1"></a></div>
+                        <div class="icon"><a href=""><img src="../Images/browser.png" alt="" class="icon-1"></a></div>
+                        <div class="icon"><a href=""><img src="../Images/linkdin.png" alt="" class="icon-1"></a></div>
+                        <div class="icon"><a href=""><img src="../Images/instagram.png" alt="" class="icon-1"></a></div>
+                        <div class="icon"><a href=""><img src="../Images/businessEnquiry.png" alt="" class="icon-1"></a></div>
+                    </div>
+                    <div class="head-contact">
+                        <div class="contact-icon">
+                            <img src="../Images/Phone.png" alt="phone-icon" class="icon-1">
+                        </div>
+                        <div class="contact-number">
+                            <h4>123-4567-890</h4>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+                <!-- Nav -->
+            <nav class="nav-section">
+                <div class="nav-section-title">
+                    <div class="nav-title-icon">
+                        <img src="../Images/HouseLine.png" alt="house icon">
+                    </div>
+                    <div class="nav-title-head">
+                        <div class="head-tile">
+                            <h3>REIS</h3>
+                        </div>
+                        <div class="head-small-title">
+                            <h5>Real State</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-section-list">
+                    <div class="nav-list">
+                        <div class="ham-menu-cont">
+                             <img src="../Images/menu-white.png" alt="menu-icon" />
+                        </div>
+                        <div >
+                            <ul class="full-menu-links">
+                                <li class="special-l"><a href="#" >Home</a></li>
+                                <li class="special-l"><a href="#" >About Us</a></li>
+                                <li class="special-l"><a href="#" >Our Agents</a></li>
+                                <li class="special-l"><a href="#" >Properties</a></li>
+                                <li class="special-l"><a href="#" >Gallery</a></li>
+                                <li class="special-l"><a href="#" >Blog</a></li>
+                                <li class="special-l"><a href="#" >Contact Us</a></li>
+                                <li class="special-l"><a href="#" >Search</a></li>
+                                <li class="special-list"><a href="#" >Add Listing</a></li>
+                            </ul>
+                        </div>
+                   </div>
+                    <div class="responsive-nav-content">
+                        <ul>
+                            <li class="special-l"><a href="#" >Home</a></li>
+                            <li class="special-l"><a href="#" >About Us</a></li>
+                            <li class="special-l"><a href="#" >Our Agents</a></li>
+                            <li class="special-l"><a href="#" >Properties</a></li>
+                            <li class="special-l"><a href="#" >Gallery</a></li>
+                            <li class="special-l"><a href="#" >Blog</a></li>
+                            <li class="special-l"><a href="#" >Contact Us</a></li>
+                            <li class="special-l"><a href="#" >Search</a></li>
+                            <li class="special-list"><a href="#" >Add Listing</a></li>
+                        </ul>
+                     </div>
+                </div>
+            </nav>
+         
+            <!-- Home -->
+            <div class="home-section">
+                <div class="home-sec-head">
+                    <h1>Discover Your Dream Home</h1>
+                </div>
+                <div class="home-sec-p">
+                    <p>Welcome! Explore our listings and find your perfect home.</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="sec-1-search_bar">
+            <form id="searchForm" action="/search" method="GET">
+                    <div class="sec-1-title">
+                        <div class="sec-1-color button-color" id="rentButton">
+                            <button type="button" onclick="toggleOptions('rent')">Rent</button>
+                        </div>
+                        <div class="sec-1-color" id="saleButton">
+                            <button type="button" onclick="toggleOptions('sale')">Sale</button>
+                        </div>
+                    </div>
+                        <div class="sec-rent-sale" id="optionsRent">
+                            <div class="input-search">
+                                <label for="city">Locations</label>
+                                <select id="city" name="city">
+                                    <option value="New York">Select your city</option>
+                                    <option value="Los Angeles">Los Angeles</option>
+                                    <option value="Chicago">Chicago</option>
+                                    <option value="Houston">Houston</option>
+                                    <option value="Phoenix">Phoenix</option>
+                                </select>
+                            </div>
+                            <div class="input-search">
+                                <label for="propertyType">Property Type</label>
+                                <select id="propertyType" name="propertyType">
+                                        <option value="House">Select property type</option>
+                                        <option value="House">House</option>
+                                        <option value="Apartment">Apartment</option>
+                                        <option value="Condo">Condo</option>
+                                        <option value="Townhouse">Townhouse</option>
+                                        <option value="Duplex">Duplex</option>
+                                </select>
+                            </div>
+                            <div class="input-search">
+                                <label for="rentRange">Rent Range</label>
+                                <select id="rentRange" name="rentRange">
+                                    <option value="Select rent range">Select rent range</option>
+                                    <option value="1000-2000">$1000 - $2000</option>
+                                    <option value="2000-3000">$2000 - $3000</option>
+                                    <option value="3000-4000">$3000 - $4000</option>
+                                    <option value="4000-5000">$4000 - $5000</option>
+                                    <option value="5000+">$5000+</option>
+                                </select>
+                            </div>
+                            <div class="input-button">
+                                <input type="submit" value="Search">
+                           </div>
+                        </div>
+    
+                    <div class="sec-rent-sale" id="optionsSale" style="display: none;">
+                        <div class="input-search">
+                            <label for="condition">Property Condition</label>
+                            <select id="condition" name="condition">
+                                <option value="New">New</option>
+                                <option value="Refurbished">Refurbished</option>
+                                <option value="Used">Used</option>
+                            </select>
+                        </div>
+                        <div class="input-search">
+                            <label for="priceRange">Sale Price Range</label>
+                            <select id="priceRange" name="priceRange">
+                                <option value="Select price range">Select price range</option>
+                                <option value="100000-200000">$100,000 - $200,000</option>
+                                <option value="200000-300000">$200,000 - $300,000</option>
+                                <option value="300000-400000">$300,000 - $400,000</option>
+                                <option value="400000-500000">$400,000 - $500,000</option>
+                                <option value="500000+">$500,000+</option>
+                            </select>  
+                        </div>
+                        <div class="input-search">
+                            <label for="bedrooms">Number of Bedrooms</label>
+                            <select id="bedrooms" name="bedrooms">
+                                <option value="Select number of bedrooms">Select number of bedrooms</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5+">5+</option>
+                            </select>
+                        </div>
+                        <div class="input-button">
+                            <input type="submit" value="Search">
+                       </div>
+                    </div>
+            </form>
+        </section>
+        
+        <!-- Properties section -->
+        <section class="properties">
+            <div class="property-head">
+                <h1>Properties by Area</h1>
+            </div>
+            <div class="property-para">
+                <p>Explore properties in various areas and find your ideal home.</p>
+            </div>
+            <div class="property-picture">
+                <div class="para-pic-p1">
+                    <div class="para-1">
+                        <div class="para-1-img l1">
+                            <h4>Washington</h4>
+                        </div>
+                        <div class="para-1-p">
+                            <p>25 listings</p>
+                        </div>
+                        <div class="para-1-icon">
+                            <img src="../Images/MapPin.png" alt="map icon">
+                        </div>
+                    </div>
+                    <div class="para-1">
+                         <div class="para-1-img l2">
+                            <h4>Franklin</h4>
+                        </div>
+                        <div class="para-1-p">
+                            <p>25 listings</p>
+                        </div>
+                        <div class="para-1-icon">
+                            <img src="../Images/MapPin.png" alt="map icon">
+                        </div>
+                    </div>
+                    <div class="para-1">
+                        <div class="para-1-img l3">
+                            <h4>Clinton</h4>
+                        </div>
+                        <div class="para-1-p">
+                            <p>25 listings</p>
+                        </div>
+                        <div class="para-1-icon">
+                            <img src="../Images/MapPin.png" alt="map icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="para-pic-p2">
+                    <div class="para-2">
+                        <div class="para-1-img l4">
+                            <h4>Arlington</h4>
+                        </div>
+                        <div class="para-1-p">
+                            <p>25 listings</p>
+                        </div>
+                        <div class="para-1-details">
+                            <a href="#"><button>View Details</button></a>
+                        </div>
+                        <div class="para-1-icon p-2">
+                            <img src="../Images/MapPin.png" alt="map icon">
+                        </div>
+                    </div>
+                    <div class="para-2">
+                        <div class="para-1-img l5">
+                            <h4>Centerville</h4>
+                        </div>
+                        <div class="para-1-p">
+                            <p>25 listings</p>
+                        </div>
+                        <div class="para-1-icon">
+                            <img src="../Images/MapPin.png" alt="map icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+     </div>
+
+
+     <section class="properties p-area">
+        <div class="property-head">
+            <h1>Properties by Areas</h1>
+        </div>
+        <div class="property-para-p">
+            <p>Explore a variety of properties for sale or rent, including apartments, houses, and commercial spaces.</br> Our team is ready to help you find the perfect property.</p>
+        </div>
+        <div class="property-area">
+            <div class="area-1 special-area">
+                <div class="area-1-img">
+                    <img src="/Images/sel.png" alt="">
+                </div>
+                <div class="area-1-head">
+                    <h3>Sell your home</h3>
+                </div>
+                <div class="area-1-para">
+                    <p>Looking to sell your home? We can help you navigate the process and get the best price for your property.</p>
+                </div>
+                <!-- <div class="area-1 link">
+                    <a href="#">Read More</a>
+                </div> -->
+            </div>
+            <div class="area-1">
+                <div class="area-1-img">
+                    <img src="/Images/rent.png" alt="">
+                </div>
+                <div class="area-1-head">
+                    <h3>Rent your home</h3>
+                </div>
+                <div class="area-1-para">
+                    <p>Thinking about renting out your property? We offer comprehensive rental management services to make the process hassle-free.</p>
+                </div>
+                <!-- <div class="area-1 link">
+                    <a href="#">Read More</a>
+                </div> -->
+            </div>
+            <div class="area-1">
+                <div class="area-1-img">
+                    <img src="/Images/buy.png" alt="">
+                </div>
+                <div class="area-1-head">
+                    <h3>Buy a home</h3>
+                </div>
+                <div class="area-1-para">
+                    <p>Ready to find your dream home? Explore our listings and find the perfect property to buy.</p>
+                </div>
+                <!-- <div class="area-1 link">
+                    <a href="#">Read More</a>
+                </div> -->
+            </div>
+            <div class="area-1">
+                <div class="area-1-img">
+                    <img src="/Images/market.png" alt="">
+                </div>
+                <div class="area-1-head">
+                    <h3>Free marketing</h3>
+                </div>
+                <div class="area-1-para">
+                    <p>List your property with us and get free marketing exposure to reach a wider audience of potential buyers or renters.</p>
+                </div>
+                <!-- <div class="area-1 link">
+                    <a href="#">Read More</a>
+                </div> -->
+            </div>
+        </div>
+     </section>
+
+
+     <section class="properties-list">
+        <div class="property-list-name">
+            <h1>Latest Properties for Rent</h1>
+        </div>
+        <div class="property-list-para">
+            <p>Check out our latest rental properties below:</p>
+        </div>
+        <div class="listings-d">
+            
+            <div class="property-list-details">
+                <!-- Property 1 -->
+                <div class="property">
+                    <div class="property-image">
+                        <img src="/Images/h-1.png" alt="house-1-for rent">
+                    </div>
+                    <div class="property-location">
+                        <p>92 ALLIUM PLACE, ORLANDO FL 32827</p>
+                    </div>
+                    <div class="property-amount">
+                        <p>$ 590,693</p>
+                    </div>
+                    <div class="property-details">
+                        <div class="details-d1">
+                            <img src="/Images/Car.png">
+                            <p>4</p>
+                        </div>
+                        <div class="details-d1">
+                            <img src="/Images/Bathtub.png">
+                            <p>4</p>
+                        </div>
+                        <div class="details-d1">
+                            <img src="/Images/ArrowsOut.png">
+                            <p>2,096.00 ft</p>
+                        </div>
+                    </div>
+                    <div class="property-user-1">
+                        <div class="user-icon">
+                            <img src="/Images/e-1.png">
+                        </div>
+                        <div class="user-name">
+                            <h5>Jenny</h5>
+                        </div>
+                        <div class="user-heart-saving">
+                            <img src="/Images/f-1.png">
+                        </div>
+                        <div class="user-heart-saving">
+                            <img src="/Images/f-3.png">
+                        </div>
+                        <div class="user-heart-saving">
+                            <img src="/Images/f-4.png">
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Property 2 -->
+                <div class="property">
+                    <div class="property-image">
+                        <img src="/Images/h-3.png" alt="house-1-for rent">
+                    </div>
+                    <div class="property-location">
+                        <p>92 ALLIUM PLACE, ORLANDO FL 32827</p>
+                    </div>
+                    <div class="property-amount">
+                        <p>$ 590,693</p>
+                    </div>
+                    <div class="property-details">
+                        <div class="details-d1">
+                            <img src="/Images/Car.png">
+                            <p>4</p>
+                        </div>
+                        <div class="details-d1">
+                            <img src="/Images/Bathtub.png">
+                            <p>4</p>
+                        </div>
+                        <div class="details-d1">
+                            <img src="/Images/ArrowsOut.png">
+                            <p>2,096.00 ft</p>
+                        </div>
+                    </div>
+                    <div class="property-user-1">
+                        <div class="user-icon">
+                            <img src="/Images/e-2.png">
+                        </div>
+                        <div class="user-name">
+                            <h5>Jenny</h5>
+                        </div>
+                        <div class="user-heart-saving">
+                            <img src="/Images/f-1.png">
+                        </div>
+                        <div class="user-heart-saving">
+                            <img src="/Images/f-3.png">
+                        </div>
+                        <div class="user-heart-saving">
+                            <img src="/Images/f-4.png">
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Property 2 -->
+                <div class="property">
+                    <div class="property-image">
+                        <img src="/Images/h-2.png" alt="house-1-for rent">
+                    </div>
+                    <div class="property-location">
+                        <p>92 ALLIUM PLACE, ORLANDO FL 32827</p>
+                    </div>
+                    <div class="property-amount">
+                        <p>$ 590,693</p>
+                    </div>
+                    <div class="property-details">
+                        <div class="details-d1">
+                            <img src="/Images/Car.png">
+                            <p>4</p>
+                        </div>
+                        <div class="details-d1">
+                            <img src="/Images/Bathtub.png">
+                            <p>4</p>
+                        </div>
+                        <div class="details-d1">
+                            <img src="/Images/ArrowsOut.png">
+                            <p>2,096.00 ft</p>
+                        </div>
+                    </div>
+                    <div class="property-user-1">
+                        <div class="user-icon">
+                            <img src="/Images/e-3.png">
+                        </div>
+                        <div class="user-name">
+                            <h5>Jenny</h5>
+                        </div>
+                        <div class="user-heart-saving">
+                            <img src="/Images/f-1.png">
+                        </div>
+                        <div class="user-heart-saving">
+                            <img src="/Images/f-3.png">
+                        </div>
+                        <div class="user-heart-saving">
+                            <img src="/Images/f-4.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="button-list-1">
+                <button onclick="moreFunction()">Load more listing</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="Image-scroll">
+        <div class="image-scroll-head">
+            <h1>Latest Properties by Rent</h1>
+        </div>
+        <div class="image-scroll-para">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic ab laborum quibusdam blanditiis reiciendis, quia soluta optio eius quaerat. Temporibus cupiditate, ex veritatis accusantium dicta ea praesentium incidunt ipsum expedita?</p>
+        </div>
+        <div class="gallery-wrap">
+            <div class="gallery">
+                <div>
+                    <span><img src="/Images/g-3.png"></span>
+                    <span><img src="/Images/g-4.png"></span>
+                    <span><img src="/Images/g-2.png"></span>
+                </div>
+                <div>
+                    <span><img src="/Images/g-2.png"></span>
+                    <span><img src="/Images/g-4.png"></span>
+                    <span><img src="/Images/g-2.png"></span>
+                </div>
+                <div>
+                    <span><img src="/Images/g-3.png"></span>
+                    <span><img src="/Images/g-4.png"></span>
+                    <span><img src="/Images/g-2.png"></span>
+                </div>
+            </div>
+            <div >
+                <img src="/Images/ArrowLeft.png" id="backBtn">
+                <img src="/Images/ArrowRight.png" id="nextBtn">
+            </div>
+        </div>
+        
+    </section>
+   
+    <section class="end-details">
+        <div class="head-d">
+            <h1>Find Best Place For Living</h1>
+        </div>
+        <div class="para-d">
+            <p>Spend vacations in best hotels and resorts find the great place of your
+                choice using different searching options.</p>
+        </div>
+        <div class="contact-d">
+            <a href="#">Contact</a>
+        </div>
+    </section>
+    
+    <footer class="footer-section">
+        <div class="footer-contact">
+            <div class="footer-con-logo">
+                <div class="nav-title-icon">
+                    <img src="../Images/color-House.png" alt="house icon">
+                </div>
+                <div class="nav-title-head-para">
+                    <div class="head-tile">
+                        <h3>REIS</h3>
+                    </div>
+                    <div class="head-small-title">
+                        <h5>Real State</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-us"><h5>Contact Us</h5></div>
+            <div class="contact-num"><h5>Call : +123 400 123</h5></div>
+            <div class="contact-para">
+                <p>Praesent nulla massa, 
+                hendrerit </br> vestibulum gravida in, feugiat auctor felis.</p>
+            </div>
+            <div class="contact-email-text">
+                <p>Email us at : <a href="#">example@gmail.com</a></p>
+            </div>
+            <div class="social-icon-contact">
+                <div class="icon"><a href=""><img src="../Images/color-f.png" alt="" class="icon-1"></a></div>
+                <div class="icon"><a href=""><img src="../Images/color-b.png" alt="" class="icon-1"></a></div>
+                <div class="icon"><a href=""><img src="../Images/color-I.png" alt="" class="icon-1"></a></div>
+                <div class="icon"><a href=""><img src="../Images/color-inst.png" alt="" class="icon-1"></a></div>
+                <div class="icon"><a href=""><img src="../Images/color-be.png" alt="" class="icon-1"></a></div>
+            </div>
+        </div>
+        <div class="footer-features">
+            <div class="footer-poli-head">
+                <h3>Features</h3>
+            </div>
+            <div class="footer-poli-para">
+                <h5>Home</h5>
+                <h5>Become a Host</h5>
+                <h5>Pricing</h5>
+                <h5>Blog</h5>
+                <h5>Contact</h5>
+            </div>
+        </div>
+        <div class="footer-company">
+            <div class="footer-poli-head">
+                <h3>Company</h3>
+            </div>
+            <div class="footer-poli-para">
+                <h5>About Us</h5>
+                <h5>Press</h5>
+                <h5>Contact</h5>
+                <h5>Careers</h5>
+                <h5>Blog</h5>
+            </div>
+        </div>
+        <div class="footer-policies">
+            <div class="footer-poli-head">
+                <h3>Team and Policy</h3>
+            </div>
+            <div class="footer-poli-para">
+                <h5>Terms of servies</h5>
+                <h5>Privacy Policy</h5>
+                <h5>Security</h5>
+            </div>
+        </div>
+    </footer>
+    <script src="/JS/index.js"></script>
+</body>
+</html>
